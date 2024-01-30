@@ -1,0 +1,38 @@
+/* tab-header.component.css */
+
+/* city-tabs.component.css */
+h2{
+  text-align: center;
+  text-decoration: dashed;
+  color: blue;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+
+  

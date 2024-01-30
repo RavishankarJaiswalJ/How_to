@@ -1,0 +1,28 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .tab-header {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+  }
+  
+  .tab-header.active {
+    background-color: #ddd;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .tab-content.ng-star-inserted {
+    display: block;
+  }
+  

@@ -1,0 +1,22 @@
+<h2>Accordian</h2>
+
+
+
+  <!-- <div *ngFor="let item of items; let i = index">
+    <div (click)="toggleItem(i)" class="accordion-header">
+      {{ item.title }}<i class="bi bi-plus"></i>
+    </div>
+    <div *ngIf="item.expanded" class="accordion-content">
+      {{ item.content }}
+    </div>
+  </div> -->
+
+  <div *ngFor="let item of items">
+    <div (click)="toggleItem(item)" class="accordion-header">
+      {{ item.title }}
+    </div>
+    <div *ngIf="item.expanded" class="accordion-content">
+      {{ item.content }}
+    </div>
+  </div>
+

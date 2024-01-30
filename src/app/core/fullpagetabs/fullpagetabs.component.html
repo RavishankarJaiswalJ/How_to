@@ -1,0 +1,22 @@
+<p>fullpagetabs works!</p>
+<div class="full-page-tabs">
+    <div class="tabs">
+      <div class="tab-header" [class.active]="selectedTab === 'tab1'" (click)="selectTab('tab1')" >Tab 1</div>
+      <div class="tab-header" [class.active]="selectedTab === 'tab2'" (click)="selectTab('tab2')"  >Tab 2</div>
+      <div class="tab-header" [class.active]="selectedTab === 'tab3'" (click)="selectTab('tab3')"  >Tab 3</div>
+    </div>
+  
+    <div id="tab1" class="tab-content"  *ngIf="selectedTab === 'tab1'" >
+      <h2>Content for Tab 1</h2>
+      <p>This is the content for Tab 1.</p>
+    </div>
+    <div id="tab2" class="tab-content"  *ngIf="selectedTab === 'tab2'" >
+      <h2>Content for Tab 2</h2>
+      <p>This is the content for Tab 2.</p>
+    </div>
+    <div id="tab3" class="tab-content" *ngIf="selectedTab === 'tab3'">
+      <h2>Content for Tab 3</h2>
+      <p>This is the content for Tab 3.</p>
+    </div>
+  </div>
+  

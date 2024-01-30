@@ -1,0 +1,20 @@
+<p>tab-header2 works!</p>
+<div class="tabs">
+    <div class="tab-header" [class.active]="selectedTab === 'tab1'" (click)="selectTab('tab1')">Tab 1</div>
+    <div class="tab-header" [class.active]="selectedTab === 'tab2'" (click)="selectTab('tab2')">Tab 2</div>
+    <div class="tab-header" [class.active]="selectedTab === 'tab3'" (click)="selectTab('tab3')">Tab 3</div>
+  
+    <div class="tab-content" *ngIf="selectedTab === 'tab1'">
+      <!-- Content for Tab 1 -->
+      <p>Content for Tab 1 goes here.</p>
+    </div>
+    <div class="tab-content" *ngIf="selectedTab === 'tab2'">
+      <!-- Content for Tab 2 -->
+      <p>Content for Tab 2 goes here.</p>
+    </div>
+    <div class="tab-content" *ngIf="selectedTab === 'tab3'">
+      <!-- Content for Tab 3 -->
+      <p>Content for Tab 3 goes here.</p>
+    </div>
+  </div>
+  

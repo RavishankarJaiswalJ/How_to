@@ -1,0 +1,46 @@
+/* tabs.component.css */
+h2{
+  text-align: center;
+}
+.tabs {
+  display: flex;
+  /* flex-direction: column; */
+  border-bottom: 1px solid #ccc;
+  /* width: 20%; */
+
+}
+
+.tab {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background-color: #f1f1f1;
+}
+
+.tab.active {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ccc;
+   width: 20%;
+
+}
+.tab-Subtitle{
+  padding: 20px;
+  border: 1px solid #ccc;
+   width: 20%;
+}
+.tab:hover{
+  background-color: #ddd;
+}
+
+.tab-content:hover{
+  background-color: #ddd;
+}
+.tab-Subtitle:hover{
+  background-color: #ddd;
+}

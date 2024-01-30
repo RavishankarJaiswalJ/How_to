@@ -1,0 +1,26 @@
+<h2>Tabs</h2>
+
+<div class="tabs">
+  <div *ngFor="let tab of tabs; let i = index" 
+       class="tab" 
+       [class.active]="i === activeTabIndex"
+       (click)="setActiveTab(i)">
+    {{ tab.title }}
+  </div>
+</div>
+
+<div class="tab-Subtitle">
+  <div *ngIf="tabs.length > 0">
+    {{ tabs[activeTabIndex].subtitle }}
+  </div>
+</div>
+<div class="tab-content">
+  <div *ngIf="tabs.length > 0">
+    {{ tabs[activeTabIndex].content }}
+  </div>
+</div>
+
+
+
+
+  

@@ -1,0 +1,58 @@
+
+
+<app-tab-header></app-tab-header>
+
+<div class="icon-bar">
+  <a href="#" class="active"><i class="bi bi-house-door-fill"></i></a>
+  <a href=""><i class="bi bi-search"></i></a>
+  <a href=""><i class="bi bi-envelope"></i></a>
+  <a href=""><i class="bi bi-globe"></i></a>
+  <a href=""><i class="bi bi-trash"></i></a>
+</div>
+
+<!-- <div class="container" (click)="myFunction(this)">
+  <div class="bar1" id="bar1"></div>
+  <div class="bar2" id="bar2"></div>
+  <div class="bar3" id="bar3"></div>
+</div> -->
+<div class="main">
+  <app-accordian [items]="accordionItems"></app-accordian>
+
+  <!-- app.component.html -->
+  
+  <app-tabs [tabs]="[
+    { title: 'Tab 1', subtitle:'row1', content: 'Content for Tab 1' },
+    { title: 'Tab 2', subtitle:'row2', content: 'Content for Tab 2' },
+    { title: 'Tab 3', subtitle:'row3', content: 'Content for Tab 3' }
+  ]"></app-tabs>
+  
+  <!-- app.component.html -->
+  
+  <app-vertical-tabs [tabs]="[
+    { title: 'Tab 1', content: 'Content for Tab 1' },
+    { title: 'Tab 2', content: 'Content for Tab 2' },
+    { title: 'Tab 3', content: 'Content for Tab 3' }
+  ]"></app-vertical-tabs>
+  
+  
+  <!-- app.component.html -->
+  
+  <!-- <div class="tab-headers">
+    <app-tab-header *ngFor="let tab of tabs; let i = index" 
+                    [title]="tab.title" 
+                    [active]="i === activeTabIndex" 
+                    (tabClick)="setActiveTab(i)">
+    </app-tab-header>
+  </div>
+  
+  <div class="tab-content">
+    <div *ngIf="tabs.length > 0">
+      {{ tabs[activeTabIndex].content }}
+    </div>
+  </div> -->
+  <app-tab-header2></app-tab-header2>
+  
+  
+  
+  
+</div>

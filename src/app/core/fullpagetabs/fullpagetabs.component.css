@@ -1,0 +1,60 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 20%;
+}
+
+.full-page-tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.tabs {
+  display: flex;
+  background-color: #333;
+}
+
+.tab-header {
+  cursor: pointer;
+  padding: 15px;
+  color: #fff;
+  flex: 1;
+  text-align: center;
+  border: 1px solid #fff;
+  border-bottom: none;
+}
+
+.tab-header.active {
+  background-color: goldenrod;
+}
+
+.tab-content {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #fff;
+  display: none;
+}
+
+.tab-content.ng-star-inserted {
+  display: block;
+}
+
+#tab1 {
+  background-color: red;
+}
+#tab2 {
+  background-color: green;
+}
+#tab3 {
+  background-color: blue;
+}
+/* #Oslo {background-color:orange;} */
+.tabs:hover + .tab-content{
+  display: block;
+}
+
+/* .tabs.active + .tab-content{
+  display: block;
+} */
